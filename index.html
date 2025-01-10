@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Card Carousel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="carousel-container">
+        <div class="carousel"></div>
+      </div>
+      <div class="player">
+        <header class="header">
+          <button class="control-button button-md">
+            <img
+              src="icons/carousel-horizontal.svg"
+              alt="Carousel horizontal"
+            />
+          </button>
+        </header>
+        <div class="content">
+          <section class="section-left">
+            <div class="song-info">
+              <h2 class="title" id="song-title">Back to the Future</h2>
+              <h3 class="artist-name" id="artist-name">Michael Jackson</h3>
+              <h4 class="album-name" id="album-name">Thriller</h4>
+            </div>
+            <div class="controls">
+              <button class="control-button button-lg">
+                <img src="icons/player-track-prev.svg" alt="Prev" />
+              </button>
+              <button class="control-button button-lg">
+                <img src="icons/player-play.svg" alt="Play" />
+              </button>
+              <button class="control-button button-lg">
+                <img src="icons/player-track-next.svg" alt="Next" />
+              </button>
+            </div>
+            <div class="time-progress-tracks">
+              <span class="current-time" id="current-time">0:30</span>
+              <div class="slider" id="seeker-slider">
+                <div class="progress-bar">
+                  <div class="thumb"></div>
+                </div>
+              </div>
+              <span class="remaining-time" id="remaining-time">-2:21</span>
+            </div>
+            <div class="extra-controls">
+              <div class="volume-tracks">
+                <div class="volume-icon">
+                  <button class="control-button button-s">
+                    <img src="icons/volume.svg" alt="Volume" />
+                  </button>
+                </div>
+                <div class="slider" id="volume-slider">
+                  <div class="progress-bar">
+                    <div class="thumb"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <button class="control-button button-s">
+                  <img src="icons/repeat.svg" alt="Repeat" />
+                </button>
+                <button class="control-button button-s">
+                  <img src="icons/arrows-shuffle.svg" alt="Shuffle" />
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="section-right">
+            <div class="album-art">
+              <img src="images/default-album-art.webp" alt="Album art" />
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
